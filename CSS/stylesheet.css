@@ -1,0 +1,240 @@
+body {
+  background-color: hsl(270, 20%, 96%);
+  font-family: "Rubik", serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  gap: 10rem;
+}
+.container {
+  flex-basis: 50%;
+  position: relative;
+}
+.space {
+  background: linear-gradient(45deg, hsl(276, 55%, 52%), hsl(293, 100%, 63%));
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: relative;
+  left: -150px;
+  height: 950px;
+  width: 650px;
+}
+.phone-sample {
+  background-color: hsl(270, 20%, 96%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  border: 10px solid #fff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  width: 350px;
+
+  position: absolute;
+  left: 400px;
+  top: 0;
+  transform: translate(0, 10%);
+
+  display: flex;
+  flex-direction: column;
+}
+.phone-sample::before {
+  content: " ";
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 12rem;
+
+  transform: translate(35%, -17px);
+}
+.message-main {
+  background-color: hsl(270, 20%, 96%);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.Samuel {
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 1.5rem 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.img-container {
+  height: 40px;
+}
+.img-container img {
+  height: 100%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.name {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+.name h1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.name p {
+  color: hsl(276, 100%, 81%);
+  font-size: 0.6rem;
+}
+.icon {
+  cursor: pointer;
+  stroke: #fff;
+  height: 24px;
+}
+.move {
+  position: absolute;
+  right: 10px;
+}
+.message-container {
+  padding-top: 1rem;
+  margin: 0;
+}
+.message {
+  background-color: hsla(210, 12%, 90%, 0.767);
+  color: hsl(276, 55%, 52%);
+  border-radius: 0.8rem;
+  border-bottom-left-radius: 0;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+  width: 250px;
+}
+.message-container p:first-child {
+  margin-bottom: 1rem;
+}
+/* STYLING THE RIGHT SIDE MESSAGE  */
+.img-dog-container {
+  align-self: flex-end;
+  height: 50px;
+  margin: 1.5rem 0.5rem 0.5rem 0;
+}
+.img-dog-container img {
+  border-radius: 0.8rem;
+  height: 100%;
+}
+.right-message {
+  justify-self: end;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.right-message p:first-child {
+  margin-bottom: 1rem;
+}
+.right-msg {
+  align-self: flex-end;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(271, 15%, 43%);
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  width: 210px;
+
+  right: 0;
+  /* display: inline-block; */
+}
+.msg-bt {
+  align-self: flex-end;
+  width: 150px;
+}
+/* STYLING THE BOTTOM MESSAGE CONTAINER  */
+.bottom-message {
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  color: hsla(0, 0%, 100%, 0.87);
+  border-radius: 0.8rem;
+  border-bottom-left-radius: 0;
+  padding: 1rem 2rem 1rem 0.5rem;
+  margin-left: 0.5rem;
+  width: 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-message-container .bottom-message:first-child {
+  margin-bottom: 0.5rem;
+}
+.bottom-message p {
+  margin-left: -40px;
+}
+.bottom-message .p-move {
+  margin-left: -60px;
+}
+.bottom-message span {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.last-last {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.4rem;
+  padding-left: 2rem;
+  margin: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.last-man {
+  color: hsl(206, 6%, 79%);
+}
+.arrow-icon {
+  cursor: pointer;
+  height: 52px;
+  align-self: center;
+  justify-self: center;
+  fill: hsl(271, 36%, 24%);
+}
+/* .STYLING THE DESCRIPTION SECTION  */
+.description {
+  align-self: center;
+  flex-basis: 450px;
+}
+h2 {
+  color: hsl(271, 36%, 24%);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.description p {
+  color: hsl(270, 7%, 64%);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
